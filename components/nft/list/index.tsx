@@ -13,7 +13,9 @@ const NftList: React.FunctionComponent<NftListProps> = ({nfts})=>{
             {nfts.map((nft)=>
                 
                 <div key={nft.image} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-                    <NftItem/>
+                    <NftItem
+                        item={nft}
+                    />
                 </div>
 
             )}
